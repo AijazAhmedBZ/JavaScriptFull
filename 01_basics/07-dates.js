@@ -24,11 +24,17 @@ let myTimeStamp = Date.now()
 
 let newdate = new Date()
 
-console.log(newdate)
-console.log(newdate.getMonth()+1)
-console.log(newdate.getDay())
-console.log(newdate.getTime())
+// console.log(newdate)
+// console.log(newdate.getMonth()+1)
+// console.log(newdate.getDay())
+// console.log(newdate.getTime())
 
 // `${newdate.getDay()} and the time is ${newdate.getTime()}`
 
-newdate.toLocaleString
+console.log(
+  newdate.toLocaleString("default", {
+    year: "numeric",
+    month: "long",
+    weekday: "long",
+  })
+);
