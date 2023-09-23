@@ -30,12 +30,13 @@ const myArr2 = new Array(1, 2, 3, 4);
 
 //slice, splice
 
-// console.log("A", myArr);
+console.log("Original Array", myArr);
 
 const myn1 = myArr.slice(1, 3);
 console.log("Slice",myn1)
 // console.log("B", myArr);
 
-const myn2 = myArr.splice(1, 3);
-console.log("Splice",myn2)
+const myn2 = myArr.splice(1, 3);//slice just bring section of an array without manipulating original array
+console.log("Splice",myn2)//splice manupilates original array
 console.log("Slice after splice",myn1)
+console.log("Original array after splice", myArr);
