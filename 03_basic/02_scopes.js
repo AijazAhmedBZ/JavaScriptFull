@@ -17,9 +17,32 @@ function one() {
   const userName = "Aijaz";
   function two() {
     const website = "youtube";
-    console.log("From one username: ", userName);
+    // console.log("From one username: ", userName);
   }
-//   console.log("from function two website: ", website);
+  //   console.log("from function two website: ", website);
   two();
 }
-one()
+one();
+
+if (true) {
+  const username = "Aijaz";
+  if (username === "Aijaz") {
+    const website = " ka youtube";
+    // console.log(username + website);
+  }
+  //   console.log(website)
+}
+// console.log(username)
+
+//*********** Interesting ************* */
+
+console.log(addone(5));
+
+function addone(num) {
+  return num + 1;
+}
+addTwo(5);
+
+const addTwo = function (num) {
+  return num + 2;
+};
