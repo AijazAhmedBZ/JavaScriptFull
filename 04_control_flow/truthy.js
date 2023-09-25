@@ -17,11 +17,27 @@ if (userEmail) {
 
 if (userEmail.length === 0) {
   //to check empty array
-  console.log("Array is empty");
+  //   console.log("Array is empty");
 }
 
 const emptyObj = {};
 
 if (Object.keys(emptyObj).length === 0) {
-  console.log("Object is empty");
+  //   console.log("Object is empty");
 }
+
+//Nullish Coalescing Operator (??) : null undefined
+
+// let val1 = 5 ?? 10;
+// let val1 = null ?? 10;
+// let val1 = undefined ?? 15;
+let val1 = null ?? 10 ?? 15;
+
+console.log(val1);
+
+//Terniary Operator
+
+// condition ? true : false
+
+const iceTeaPrice = 100;
+iceTeaPrice >= 80 ? console.log("More than 80") : console.log("Less than 80");
